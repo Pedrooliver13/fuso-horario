@@ -1,0 +1,15 @@
+:root {
+  --primary: #34CB79;
+  --secondary: #FFF;
+  --color3: #F0F0F5;
+  --color4: #6C6C80;
+  --color5: #34bb71;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  background-color: var(--color3);
+  color: var(--color4);
+  -webkit-font-smoothing: antialiased;
+}

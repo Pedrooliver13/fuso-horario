@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lan-House</title>
+
+  <!-- FONT GOOGLE -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <!-- JS -->
+  <script>
+    document.documentElement.className = " js";
+  </script>
+</head>
+
+<body>
+  <header class="menu">
+    <div class="menu__wrapper container">
+      <a href="/">
+        <h1>Host House</h1>
+      </a>
+    </div>
+  </header>
+
+  <form class="container lan-house" data-form="wrapper">
+    <div class="item">
+      <label for="price">Preço (por 15 minutos): </label>
+      <input type="number" name="price" id="price">
+    </div>
+    <div class="item">
+      <label for="time">Tempo de uso: </label>
+      <input type="number" name="time" id="time">
+    </div>
+
+    <button type="submit" class="btn">
+      Calcular
+    </button>
+  </form>
+
+  <div class="container lan-house" data-form="results">
+  </div>
+
+  <script type="module" src="./assets/js/index.js"></script>
+</body>
+
+</html>
