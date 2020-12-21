@@ -1,4 +1,5 @@
-import LanHouse from './modules/lanHouse.js';
+import GetKcal from './modules/getKcal.js';
 
-const lanHouse = new LanHouse('[data-form="wrapper"]', '[data-form="results"]');
-lanHouse.init();
+const getKcal = new  GetKcal('[data-form]', '[data-results]');
+getKcal.init();
+

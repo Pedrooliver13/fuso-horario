@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lan-House</title>
+  <title>Cálcula Peso</title>
 
   <!-- FONT GOOGLE -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,30 +23,56 @@
   <header class="menu">
     <div class="menu__wrapper container">
       <a href="/">
-        <h1>Host House</h1>
+        <h1>getKcal</h1>
       </a>
     </div>
   </header>
 
-  <form class="container lan-house" data-form="wrapper">
-    <div class="item">
-      <label for="price">Preço (por 15 minutos): </label>
-      <input type="number" name="price" id="price">
-    </div>
-    <div class="item">
-      <label for="time">Tempo de uso: </label>
-      <input type="number" name="time" id="time">
-    </div>
 
-    <button type="submit" class="btn">
-      Calcular
-    </button>
-  </form>
+  <section class="container calculator">
+    <div class="calculator__animation" data-anima></div>
 
-  <div class="container lan-house" data-form="results">
+    <form data-form>
+      <div class="item">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="item">
+        <label for="height">Altura</label>
+        <input type="text" id="height" maxlength="4"  name="height">
+      </div>
+      <div class="item-group">
+        <label for="masculino">
+          <input type="radio" id="masculino" name="gender" value="M" checked>
+          Masculino
+        </label>
+        <label for="feminino">
+          <input type="radio" id="feminino" name="gender" value="F">
+          Feminino
+        </label>
+      </div>
+
+      <button class="btn" type="submit">Calcular</button>
+    </form>
+  </section>
+
+
+  <div class="container calculator" data-results>
   </div>
 
   <script type="module" src="./assets/js/index.js"></script>
+  <script src="./assets/js/modules/lottie.min.js"></script>
+  <script>
+    const wrapperAnimation = document.querySelector('[data-anima]');
+
+    lottie.loadAnimation({
+      container: wrapperAnimation,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './assets/js/29951-healthy-lifestyle-exercise.json'
+    });
+  </script>
 </body>
 
 </html>
