@@ -1,5 +1,5 @@
-import GetKcal from './modules/getKcal.js';
+import Hours from './modules/hours.js';
 
-const getKcal = new  GetKcal('[data-form]', '[data-results]');
-getKcal.init();
+const hours = new Hours('[data-form]', '[data-results]');
+hours.init();
 

@@ -23,33 +23,27 @@
   <header class="menu">
     <div class="menu__wrapper container">
       <a href="/">
-        <h1>getKcal</h1>
+        <h1>Fuso Horário</h1>
       </a>
     </div>
   </header>
 
 
-  <section class="container calculator">
-    <div class="calculator__animation" data-anima></div>
+  <section class="container hour">
+    <div class="hour__animation" data-anima></div>
 
     <form data-form>
       <div class="item">
-        <label for="name">Nome</label>
-        <input type="text" id="name" name="name">
+        <label for="name">Hora do Brasil (h.m):</label>
+        <input class="input" type="text" id="name" name="name">
       </div>
       <div class="item">
-        <label for="height">Altura</label>
-        <input type="text" id="height" maxlength="4"  name="height">
-      </div>
-      <div class="item-group">
-        <label for="masculino">
-          <input type="radio" id="masculino" name="gender" value="M" checked>
-          Masculino
-        </label>
-        <label for="feminino">
-          <input type="radio" id="feminino" name="gender" value="F">
-          Feminino
-        </label>
+        <label for="name">País</label>
+        <select class="input" type="text" id="name" name="name">
+          <option value="">Selecione uma opção</option>
+          <option value="5">França</option>
+          <option value="-5">Estados Unidos</option>
+        </select>
       </div>
 
       <button class="btn" type="submit">Calcular</button>
@@ -57,7 +51,7 @@
   </section>
 
 
-  <div class="container calculator" data-results>
+  <div class="container hour" data-results>
   </div>
 
   <script type="module" src="./assets/js/index.js"></script>
@@ -70,7 +64,7 @@
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: './assets/js/29951-healthy-lifestyle-exercise.json'
+      path: 'https://assets4.lottiefiles.com/temp/lf20_H5La5b.json'
     });
   </script>
 </body>

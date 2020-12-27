@@ -1,4 +1,4 @@
-.calculator {
+.hour {
   max-width: 750px;
   width: 100%;
 
@@ -12,31 +12,28 @@
   margin-bottom: 2rem;
 }
 
-.calculator__animation {
+.hour__animation {
   max-width: 300px;
   width: 100%;
 }
 
-.calculator .item {
+.hour .item {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.calculator .item-group {
+.hour .item-group {
   display: flex;
   align-items: center;
 }
 
-.calculator .item-group label{
+.hour .item-group label{
   width: 100%;
-  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
-.calculator label {
+.hour label {
   display: block;
   font-size: 1.1rem;
   font-weight: bold;
@@ -44,17 +41,21 @@
   line-height: 2;
 }
 
-.calculator input {
+.hour input, .hour select  {
   width: 100%;
   background: var(--color3);
   border-radius: 8px;
-  border: 0;
+  border: 1px solid transparent;
   outline: 0;
   padding: 16px 24px;
   font-size: 16px;
   color: var(--color4);
 }
 
-.calculator input[type="radio"] {
+.hour input:focus {
+  border: 1px solid var(--color4);
+}
+
+.hour input[type="radio"] {
   display: inline-flex;
 }
